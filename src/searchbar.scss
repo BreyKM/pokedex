@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+
+$tl: 0.6s; // transition length
+
+.search-container{
+  width: 490px;
+  display: flex;
+  margin: 3rem auto;
+}
+
+.search-box {
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  border-radius: 4rem;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+
+
+#search-submit {
+  position: relative;
+  right:2.9rem;
+  width:50px;
+  border-radius: 3rem;
+  border: none;;
+  background-image: url(./assets/icons8-search-50.png);
+  background-color: transparent;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#search-submit:hover {
+  
+}
+
